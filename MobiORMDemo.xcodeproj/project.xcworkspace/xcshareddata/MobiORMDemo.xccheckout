@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>904DBF4C-CE0D-42BB-8B8C-B3633EF425C9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MobiORMDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8583BD5B5E47535AD8C2A7BA9CD8793C06E076E9</key>
+		<string>https://github.com/Vertabelo/vertabelo-mobile-orm-demo-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MobiORMDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8583BD5B5E47535AD8C2A7BA9CD8793C06E076E9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Vertabelo/vertabelo-mobile-orm-demo-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8583BD5B5E47535AD8C2A7BA9CD8793C06E076E9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8583BD5B5E47535AD8C2A7BA9CD8793C06E076E9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>vertabelo-mobile-orm-demo-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

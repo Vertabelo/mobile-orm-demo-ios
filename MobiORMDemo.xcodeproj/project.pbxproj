@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D00B50141BAB102200433424 /* PlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B50131BAB102200433424 /* PlacesTableViewController.m */; };
+		D00B50231BAC05BC00433424 /* MODeleteStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B501C1BAC05BC00433424 /* MODeleteStatement.m */; };
+		D00B50241BAC05BC00433424 /* MOInsertStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B501E1BAC05BC00433424 /* MOInsertStatement.m */; };
+		D00B50251BAC05BC00433424 /* MOUpdateStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B50201BAC05BC00433424 /* MOUpdateStatement.m */; };
+		D00B50261BAC05BC00433424 /* MOWhereStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B50221BAC05BC00433424 /* MOWhereStatement.m */; };
+		D00B50291BB1A61800433424 /* PlaceDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00B50281BB1A61800433424 /* PlaceDetailsViewController.m */; };
+		D0101A801BDA36A400BE2216 /* MODate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0101A7F1BDA36A400BE2216 /* MODate.m */; };
+		D0101A831BDA3D3700BE2216 /* DemoSQLiteOpenHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0101A821BDA3D3700BE2216 /* DemoSQLiteOpenHelper.m */; };
+		D03B31F01BF9DD310025FFCF /* MODAOProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B31EF1BF9DD310025FFCF /* MODAOProvider.m */; };
+		D03B31F31BF9FBD10025FFCF /* AddressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B31F21BF9FBD10025FFCF /* AddressManager.m */; };
+		D03B31FA1BFA30600025FFCF /* TagManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B31F91BFA30600025FFCF /* TagManager.m */; };
+		D03B31FD1BFA308F0025FFCF /* PlaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B31FC1BFA308F0025FFCF /* PlaceManager.m */; };
+		D03B32031BFCBC380025FFCF /* FilterState.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B32021BFCBC380025FFCF /* FilterState.m */; };
+		D08D1E751BB56494004A6FC3 /* FilterPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08D1E741BB56494004A6FC3 /* FilterPlacesViewController.m */; };
+		D0E279791BC5283000D02836 /* EditTagsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E279781BC5283000D02836 /* EditTagsCollectionViewCell.m */; };
+		D0E79FAF1BBD85460096E6E9 /* PlacesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E79FAE1BBD85460096E6E9 /* PlacesTableViewCell.m */; };
+		D0EAD29F1BA98E1A0085516E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD29E1BA98E1A0085516E /* main.m */; };
+		D0EAD2A21BA98E1A0085516E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2A11BA98E1A0085516E /* AppDelegate.m */; };
+		D0EAD2AA1BA98E1A0085516E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EAD2A91BA98E1A0085516E /* Images.xcassets */; };
+		D0EAD2AD1BA98E1A0085516E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0EAD2AB1BA98E1A0085516E /* LaunchScreen.xib */; };
+		D0EAD32F1BA98E9D0085516E /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2C31BA98E9D0085516E /* Address.m */; };
+		D0EAD3301BA98E9D0085516E /* AddressDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2C51BA98E9D0085516E /* AddressDAO.m */; };
+		D0EAD3311BA98E9D0085516E /* AddressRowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2C71BA98E9D0085516E /* AddressRowHandler.m */; };
+		D0EAD3321BA98E9D0085516E /* AddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2C91BA98E9D0085516E /* AddressView.m */; };
+		D0EAD3331BA98E9D0085516E /* AddressViewDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2CB1BA98E9D0085516E /* AddressViewDAO.m */; };
+		D0EAD3341BA98E9D0085516E /* AddressViewRowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2CD1BA98E9D0085516E /* AddressViewRowHandler.m */; };
+		D0EAD3351BA98E9D0085516E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2CF1BA98E9D0085516E /* City.m */; };
+		D0EAD3361BA98E9D0085516E /* CityDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2D11BA98E9D0085516E /* CityDAO.m */; };
+		D0EAD3371BA98E9D0085516E /* CityRowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2D31BA98E9D0085516E /* CityRowHandler.m */; };
+		D0EAD3381BA98E9D0085516E /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2D51BA98E9D0085516E /* Country.m */; };
+		D0EAD3391BA98E9D0085516E /* CountryDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2D71BA98E9D0085516E /* CountryDAO.m */; };
+		D0EAD33A1BA98E9D0085516E /* CountryRowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2D91BA98E9D0085516E /* CountryRowHandler.m */; };
+		D0EAD33B1BA98E9D0085516E /* MOAExp.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2DB1BA98E9D0085516E /* MOAExp.m */; };
+		D0EAD33C1BA98E9D0085516E /* MOAExpFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2DD1BA98E9D0085516E /* MOAExpFunction.m */; };
+		D0EAD33D1BA98E9D0085516E /* MOAExpList.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2DF1BA98E9D0085516E /* MOAExpList.m */; };
+		D0EAD33E1BA98E9D0085516E /* MOAExpNegation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2E11BA98E9D0085516E /* MOAExpNegation.m */; };
+		D0EAD33F1BA98E9D0085516E /* MOAExpOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2E31BA98E9D0085516E /* MOAExpOperator.m */; };
+		D0EAD3401BA98E9D0085516E /* MOAExpParentheses.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2E51BA98E9D0085516E /* MOAExpParentheses.m */; };
+		D0EAD3411BA98E9D0085516E /* MOAExpValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2E71BA98E9D0085516E /* MOAExpValue.m */; };
+		D0EAD3421BA98E9D0085516E /* MOAsterisk.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2E91BA98E9D0085516E /* MOAsterisk.m */; };
+		D0EAD3431BA98E9D0085516E /* MOColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2EB1BA98E9D0085516E /* MOColumn.m */; };
+		D0EAD3461BA98E9D0085516E /* MOLExp.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2F41BA98E9D0085516E /* MOLExp.m */; };
+		D0EAD3471BA98E9D0085516E /* MOLExpBoth.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2F61BA98E9D0085516E /* MOLExpBoth.m */; };
+		D0EAD3481BA98E9D0085516E /* MOLExpLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2F81BA98E9D0085516E /* MOLExpLeft.m */; };
+		D0EAD3491BA98E9D0085516E /* MOLExpParentheses.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2FA1BA98E9D0085516E /* MOLExpParentheses.m */; };
+		D0EAD34A1BA98E9D0085516E /* MOLExpRight.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2FC1BA98E9D0085516E /* MOLExpRight.m */; };
+		D0EAD34B1BA98E9D0085516E /* MOOrderBy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD2FE1BA98E9D0085516E /* MOOrderBy.m */; };
+		D0EAD34C1BA98E9D0085516E /* MORowHandlerForData.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3011BA98E9D0085516E /* MORowHandlerForData.m */; };
+		D0EAD34D1BA98E9D0085516E /* MORowHandlerForDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3031BA98E9D0085516E /* MORowHandlerForDate.m */; };
+		D0EAD34E1BA98E9D0085516E /* MORowHandlerForNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3051BA98E9D0085516E /* MORowHandlerForNumber.m */; };
+		D0EAD34F1BA98E9D0085516E /* MORowHandlerForObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3071BA98E9D0085516E /* MORowHandlerForObject.m */; };
+		D0EAD3501BA98E9D0085516E /* MORowHandlerForString.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3091BA98E9D0085516E /* MORowHandlerForString.m */; };
+		D0EAD3511BA98E9D0085516E /* MORowHandlerRawData.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD30B1BA98E9D0085516E /* MORowHandlerRawData.m */; };
+		D0EAD3521BA98E9D0085516E /* MOSelectQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD30D1BA98E9D0085516E /* MOSelectQuery.m */; };
+		D0EAD3531BA98E9D0085516E /* MOSQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3101BA98E9D0085516E /* MOSQLiteManager.m */; };
+		D0EAD3541BA98E9D0085516E /* MOSQLiteOpenHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3121BA98E9D0085516E /* MOSQLiteOpenHelper.m */; };
+		D0EAD3551BA98E9D0085516E /* MOSubselect.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3141BA98E9D0085516E /* MOSubselect.m */; };
+		D0EAD3561BA98E9D0085516E /* MOTableExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3161BA98E9D0085516E /* MOTableExpression.m */; };
+		D0EAD3581BA98E9D0085516E /* MOValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD31A1BA98E9D0085516E /* MOValue.m */; };
+		D0EAD35A1BA98E9D0085516E /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD31E1BA98E9D0085516E /* Place.m */; };
+		D0EAD35B1BA98E9D0085516E /* PlaceDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3201BA98E9D0085516E /* PlaceDAO.m */; };
+		D0EAD35C1BA98E9D0085516E /* PlaceRowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3221BA98E9D0085516E /* PlaceRowHandler.m */; };
+		D0EAD35D1BA98E9D0085516E /* PlaceTag.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3241BA98E9D0085516E /* PlaceTag.m */; };
+		D0EAD35E1BA98E9D0085516E /* PlaceTagDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3261BA98E9D0085516E /* PlaceTagDAO.m */; };
+		D0EAD35F1BA98E9D0085516E /* PlaceTagRowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3281BA98E9D0085516E /* PlaceTagRowHandler.m */; };
+		D0EAD3601BA98E9D0085516E /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD32A1BA98E9D0085516E /* Tag.m */; };
+		D0EAD3611BA98E9D0085516E /* TagDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD32C1BA98E9D0085516E /* TagDAO.m */; };
+		D0EAD3621BA98E9D0085516E /* TagRowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD32E1BA98E9D0085516E /* TagRowHandler.m */; };
+		D0EAD3651BA993D80085516E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EAD3641BA993D80085516E /* libsqlite3.0.dylib */; };
+		D0EAD3681BA9A9D40085516E /* AddPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EAD3671BA9A9D40085516E /* AddPlaceViewController.m */; };
+		D0EF2CC61BE0DC0A00A2FCB5 /* MobiORM_Demo_create.sql in Resources */ = {isa = PBXBuildFile; fileRef = D0EF2CC51BE0DC0A00A2FCB5 /* MobiORM_Demo_create.sql */; };
+		D0F226161BC57E70008BEE7A /* EditTagsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F226151BC57E70008BEE7A /* EditTagsCollectionView.m */; };
+		D0F226191BC688B4008BEE7A /* TagsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F226181BC688B4008BEE7A /* TagsCollectionView.m */; };
+		D0F2261C1BC689EC008BEE7A /* TagsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F2261B1BC689EC008BEE7A /* TagsCollectionViewCell.m */; };
+		D0F2261F1BC7A73B008BEE7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F2261D1BC7A73B008BEE7A /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D00B50121BAB102200433424 /* PlacesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesTableViewController.h; sourceTree = "<group>"; };
+		D00B50131BAB102200433424 /* PlacesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesTableViewController.m; sourceTree = "<group>"; };
+		D00B501B1BAC05BC00433424 /* MODeleteStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MODeleteStatement.h; path = MobiORM/MODeleteStatement.h; sourceTree = "<group>"; };
+		D00B501C1BAC05BC00433424 /* MODeleteStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MODeleteStatement.m; path = MobiORM/MODeleteStatement.m; sourceTree = "<group>"; };
+		D00B501D1BAC05BC00433424 /* MOInsertStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOInsertStatement.h; path = MobiORM/MOInsertStatement.h; sourceTree = "<group>"; };
+		D00B501E1BAC05BC00433424 /* MOInsertStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOInsertStatement.m; path = MobiORM/MOInsertStatement.m; sourceTree = "<group>"; };
+		D00B501F1BAC05BC00433424 /* MOUpdateStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOUpdateStatement.h; path = MobiORM/MOUpdateStatement.h; sourceTree = "<group>"; };
+		D00B50201BAC05BC00433424 /* MOUpdateStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOUpdateStatement.m; path = MobiORM/MOUpdateStatement.m; sourceTree = "<group>"; };
+		D00B50211BAC05BC00433424 /* MOWhereStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOWhereStatement.h; path = MobiORM/MOWhereStatement.h; sourceTree = "<group>"; };
+		D00B50221BAC05BC00433424 /* MOWhereStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOWhereStatement.m; path = MobiORM/MOWhereStatement.m; sourceTree = "<group>"; };
+		D00B50271BB1A61800433424 /* PlaceDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceDetailsViewController.h; sourceTree = "<group>"; };
+		D00B50281BB1A61800433424 /* PlaceDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PlaceDetailsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D0101A7E1BDA36A400BE2216 /* MODate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MODate.h; path = MobiORM/MODate.h; sourceTree = "<group>"; };
+		D0101A7F1BDA36A400BE2216 /* MODate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = MODate.m; path = MobiORM/MODate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D0101A811BDA3D3700BE2216 /* DemoSQLiteOpenHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoSQLiteOpenHelper.h; sourceTree = "<group>"; };
+		D0101A821BDA3D3700BE2216 /* DemoSQLiteOpenHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSQLiteOpenHelper.m; sourceTree = "<group>"; };
+		D03B31EE1BF9DD310025FFCF /* MODAOProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MODAOProvider.h; path = MobiORM/MODAOProvider.h; sourceTree = "<group>"; };
+		D03B31EF1BF9DD310025FFCF /* MODAOProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MODAOProvider.m; path = MobiORM/MODAOProvider.m; sourceTree = "<group>"; };
+		D03B31F11BF9FBD10025FFCF /* AddressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressManager.h; sourceTree = "<group>"; };
+		D03B31F21BF9FBD10025FFCF /* AddressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AddressManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D03B31F81BFA30600025FFCF /* TagManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagManager.h; sourceTree = "<group>"; };
+		D03B31F91BFA30600025FFCF /* TagManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagManager.m; sourceTree = "<group>"; };
+		D03B31FB1BFA308F0025FFCF /* PlaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceManager.h; sourceTree = "<group>"; };
+		D03B31FC1BFA308F0025FFCF /* PlaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PlaceManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D03B32011BFCBC380025FFCF /* FilterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FilterState.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		D03B32021BFCBC380025FFCF /* FilterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FilterState.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D08D1E731BB56494004A6FC3 /* FilterPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FilterPlacesViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		D08D1E741BB56494004A6FC3 /* FilterPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FilterPlacesViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D0E279771BC5283000D02836 /* EditTagsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTagsCollectionViewCell.h; sourceTree = "<group>"; };
+		D0E279781BC5283000D02836 /* EditTagsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTagsCollectionViewCell.m; sourceTree = "<group>"; };
+		D0E79FAD1BBD85460096E6E9 /* PlacesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesTableViewCell.h; sourceTree = "<group>"; };
+		D0E79FAE1BBD85460096E6E9 /* PlacesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesTableViewCell.m; sourceTree = "<group>"; };
+		D0EAD2991BA98E1A0085516E /* MobiORMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiORMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EAD29D1BA98E1A0085516E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EAD29E1BA98E1A0085516E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D0EAD2A01BA98E1A0085516E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0EAD2A11BA98E1A0085516E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D0EAD2A91BA98E1A0085516E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0EAD2AC1BA98E1A0085516E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D0EAD2C21BA98E9D0085516E /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Address.h; path = MobiORM/Address.h; sourceTree = "<group>"; };
+		D0EAD2C31BA98E9D0085516E /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = Address.m; path = MobiORM/Address.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D0EAD2C41BA98E9D0085516E /* AddressDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressDAO.h; path = MobiORM/AddressDAO.h; sourceTree = "<group>"; };
+		D0EAD2C51BA98E9D0085516E /* AddressDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressDAO.m; path = MobiORM/AddressDAO.m; sourceTree = "<group>"; };
+		D0EAD2C61BA98E9D0085516E /* AddressRowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressRowHandler.h; path = MobiORM/AddressRowHandler.h; sourceTree = "<group>"; };
+		D0EAD2C71BA98E9D0085516E /* AddressRowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressRowHandler.m; path = MobiORM/AddressRowHandler.m; sourceTree = "<group>"; };
+		D0EAD2C81BA98E9D0085516E /* AddressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressView.h; path = MobiORM/AddressView.h; sourceTree = "<group>"; };
+		D0EAD2C91BA98E9D0085516E /* AddressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = AddressView.m; path = MobiORM/AddressView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D0EAD2CA1BA98E9D0085516E /* AddressViewDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressViewDAO.h; path = MobiORM/AddressViewDAO.h; sourceTree = "<group>"; };
+		D0EAD2CB1BA98E9D0085516E /* AddressViewDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressViewDAO.m; path = MobiORM/AddressViewDAO.m; sourceTree = "<group>"; };
+		D0EAD2CC1BA98E9D0085516E /* AddressViewRowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressViewRowHandler.h; path = MobiORM/AddressViewRowHandler.h; sourceTree = "<group>"; };
+		D0EAD2CD1BA98E9D0085516E /* AddressViewRowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressViewRowHandler.m; path = MobiORM/AddressViewRowHandler.m; sourceTree = "<group>"; };
+		D0EAD2CE1BA98E9D0085516E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = City.h; path = MobiORM/City.h; sourceTree = "<group>"; };
+		D0EAD2CF1BA98E9D0085516E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = City.m; path = MobiORM/City.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D0EAD2D01BA98E9D0085516E /* CityDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityDAO.h; path = MobiORM/CityDAO.h; sourceTree = "<group>"; };
+		D0EAD2D11BA98E9D0085516E /* CityDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityDAO.m; path = MobiORM/CityDAO.m; sourceTree = "<group>"; };
+		D0EAD2D21BA98E9D0085516E /* CityRowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityRowHandler.h; path = MobiORM/CityRowHandler.h; sourceTree = "<group>"; };
+		D0EAD2D31BA98E9D0085516E /* CityRowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityRowHandler.m; path = MobiORM/CityRowHandler.m; sourceTree = "<group>"; };
+		D0EAD2D41BA98E9D0085516E /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Country.h; path = MobiORM/Country.h; sourceTree = "<group>"; };
+		D0EAD2D51BA98E9D0085516E /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = Country.m; path = MobiORM/Country.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D0EAD2D61BA98E9D0085516E /* CountryDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountryDAO.h; path = MobiORM/CountryDAO.h; sourceTree = "<group>"; };
+		D0EAD2D71BA98E9D0085516E /* CountryDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountryDAO.m; path = MobiORM/CountryDAO.m; sourceTree = "<group>"; };
+		D0EAD2D81BA98E9D0085516E /* CountryRowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountryRowHandler.h; path = MobiORM/CountryRowHandler.h; sourceTree = "<group>"; };
+		D0EAD2D91BA98E9D0085516E /* CountryRowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountryRowHandler.m; path = MobiORM/CountryRowHandler.m; sourceTree = "<group>"; };
+		D0EAD2DA1BA98E9D0085516E /* MOAExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAExp.h; path = MobiORM/MOAExp.h; sourceTree = "<group>"; };
+		D0EAD2DB1BA98E9D0085516E /* MOAExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAExp.m; path = MobiORM/MOAExp.m; sourceTree = "<group>"; };
+		D0EAD2DC1BA98E9D0085516E /* MOAExpFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAExpFunction.h; path = MobiORM/MOAExpFunction.h; sourceTree = "<group>"; };
+		D0EAD2DD1BA98E9D0085516E /* MOAExpFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAExpFunction.m; path = MobiORM/MOAExpFunction.m; sourceTree = "<group>"; };
+		D0EAD2DE1BA98E9D0085516E /* MOAExpList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAExpList.h; path = MobiORM/MOAExpList.h; sourceTree = "<group>"; };
+		D0EAD2DF1BA98E9D0085516E /* MOAExpList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAExpList.m; path = MobiORM/MOAExpList.m; sourceTree = "<group>"; };
+		D0EAD2E01BA98E9D0085516E /* MOAExpNegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAExpNegation.h; path = MobiORM/MOAExpNegation.h; sourceTree = "<group>"; };
+		D0EAD2E11BA98E9D0085516E /* MOAExpNegation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAExpNegation.m; path = MobiORM/MOAExpNegation.m; sourceTree = "<group>"; };
+		D0EAD2E21BA98E9D0085516E /* MOAExpOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAExpOperator.h; path = MobiORM/MOAExpOperator.h; sourceTree = "<group>"; };
+		D0EAD2E31BA98E9D0085516E /* MOAExpOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAExpOperator.m; path = MobiORM/MOAExpOperator.m; sourceTree = "<group>"; };
+		D0EAD2E41BA98E9D0085516E /* MOAExpParentheses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAExpParentheses.h; path = MobiORM/MOAExpParentheses.h; sourceTree = "<group>"; };
+		D0EAD2E51BA98E9D0085516E /* MOAExpParentheses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAExpParentheses.m; path = MobiORM/MOAExpParentheses.m; sourceTree = "<group>"; };
+		D0EAD2E61BA98E9D0085516E /* MOAExpValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOAExpValue.h; path = MobiORM/MOAExpValue.h; sourceTree = "<group>"; };
+		D0EAD2E71BA98E9D0085516E /* MOAExpValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAExpValue.m; path = MobiORM/MOAExpValue.m; sourceTree = "<group>"; };
+		D0EAD2E81BA98E9D0085516E /* MOAsterisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = MOAsterisk.h; path = MobiORM/MOAsterisk.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		D0EAD2E91BA98E9D0085516E /* MOAsterisk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOAsterisk.m; path = MobiORM/MOAsterisk.m; sourceTree = "<group>"; };
+		D0EAD2EA1BA98E9D0085516E /* MOColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = MOColumn.h; path = MobiORM/MOColumn.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		D0EAD2EB1BA98E9D0085516E /* MOColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOColumn.m; path = MobiORM/MOColumn.m; sourceTree = "<group>"; };
+		D0EAD2EC1BA98E9D0085516E /* MODbType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MODbType.h; path = MobiORM/MODbType.h; sourceTree = "<group>"; };
+		D0EAD2EF1BA98E9D0085516E /* MOExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOExpression.h; path = MobiORM/MOExpression.h; sourceTree = "<group>"; };
+		D0EAD2F01BA98E9D0085516E /* MOExpressionConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOExpressionConstants.h; path = MobiORM/MOExpressionConstants.h; sourceTree = "<group>"; };
+		D0EAD2F31BA98E9D0085516E /* MOLExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOLExp.h; path = MobiORM/MOLExp.h; sourceTree = "<group>"; };
+		D0EAD2F41BA98E9D0085516E /* MOLExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOLExp.m; path = MobiORM/MOLExp.m; sourceTree = "<group>"; };
+		D0EAD2F51BA98E9D0085516E /* MOLExpBoth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOLExpBoth.h; path = MobiORM/MOLExpBoth.h; sourceTree = "<group>"; };
+		D0EAD2F61BA98E9D0085516E /* MOLExpBoth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOLExpBoth.m; path = MobiORM/MOLExpBoth.m; sourceTree = "<group>"; };
+		D0EAD2F71BA98E9D0085516E /* MOLExpLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOLExpLeft.h; path = MobiORM/MOLExpLeft.h; sourceTree = "<group>"; };
+		D0EAD2F81BA98E9D0085516E /* MOLExpLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOLExpLeft.m; path = MobiORM/MOLExpLeft.m; sourceTree = "<group>"; };
+		D0EAD2F91BA98E9D0085516E /* MOLExpParentheses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOLExpParentheses.h; path = MobiORM/MOLExpParentheses.h; sourceTree = "<group>"; };
+		D0EAD2FA1BA98E9D0085516E /* MOLExpParentheses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOLExpParentheses.m; path = MobiORM/MOLExpParentheses.m; sourceTree = "<group>"; };
+		D0EAD2FB1BA98E9D0085516E /* MOLExpRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOLExpRight.h; path = MobiORM/MOLExpRight.h; sourceTree = "<group>"; };
+		D0EAD2FC1BA98E9D0085516E /* MOLExpRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOLExpRight.m; path = MobiORM/MOLExpRight.m; sourceTree = "<group>"; };
+		D0EAD2FD1BA98E9D0085516E /* MOOrderBy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOOrderBy.h; path = MobiORM/MOOrderBy.h; sourceTree = "<group>"; };
+		D0EAD2FE1BA98E9D0085516E /* MOOrderBy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOOrderBy.m; path = MobiORM/MOOrderBy.m; sourceTree = "<group>"; };
+		D0EAD2FF1BA98E9D0085516E /* MORowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MORowHandler.h; path = MobiORM/MORowHandler.h; sourceTree = "<group>"; };
+		D0EAD3001BA98E9D0085516E /* MORowHandlerForData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MORowHandlerForData.h; path = MobiORM/MORowHandlerForData.h; sourceTree = "<group>"; };
+		D0EAD3011BA98E9D0085516E /* MORowHandlerForData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MORowHandlerForData.m; path = MobiORM/MORowHandlerForData.m; sourceTree = "<group>"; };
+		D0EAD3021BA98E9D0085516E /* MORowHandlerForDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MORowHandlerForDate.h; path = MobiORM/MORowHandlerForDate.h; sourceTree = "<group>"; };
+		D0EAD3031BA98E9D0085516E /* MORowHandlerForDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MORowHandlerForDate.m; path = MobiORM/MORowHandlerForDate.m; sourceTree = "<group>"; };
+		D0EAD3041BA98E9D0085516E /* MORowHandlerForNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MORowHandlerForNumber.h; path = MobiORM/MORowHandlerForNumber.h; sourceTree = "<group>"; };
+		D0EAD3051BA98E9D0085516E /* MORowHandlerForNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MORowHandlerForNumber.m; path = MobiORM/MORowHandlerForNumber.m; sourceTree = "<group>"; };
+		D0EAD3061BA98E9D0085516E /* MORowHandlerForObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MORowHandlerForObject.h; path = MobiORM/MORowHandlerForObject.h; sourceTree = "<group>"; };
+		D0EAD3071BA98E9D0085516E /* MORowHandlerForObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MORowHandlerForObject.m; path = MobiORM/MORowHandlerForObject.m; sourceTree = "<group>"; };
+		D0EAD3081BA98E9D0085516E /* MORowHandlerForString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MORowHandlerForString.h; path = MobiORM/MORowHandlerForString.h; sourceTree = "<group>"; };
+		D0EAD3091BA98E9D0085516E /* MORowHandlerForString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MORowHandlerForString.m; path = MobiORM/MORowHandlerForString.m; sourceTree = "<group>"; };
+		D0EAD30A1BA98E9D0085516E /* MORowHandlerRawData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MORowHandlerRawData.h; path = MobiORM/MORowHandlerRawData.h; sourceTree = "<group>"; };
+		D0EAD30B1BA98E9D0085516E /* MORowHandlerRawData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MORowHandlerRawData.m; path = MobiORM/MORowHandlerRawData.m; sourceTree = "<group>"; };
+		D0EAD30C1BA98E9D0085516E /* MOSelectQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOSelectQuery.h; path = MobiORM/MOSelectQuery.h; sourceTree = "<group>"; };
+		D0EAD30D1BA98E9D0085516E /* MOSelectQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOSelectQuery.m; path = MobiORM/MOSelectQuery.m; sourceTree = "<group>"; };
+		D0EAD30E1BA98E9D0085516E /* MOSQLiteDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOSQLiteDataSource.h; path = MobiORM/MOSQLiteDataSource.h; sourceTree = "<group>"; };
+		D0EAD30F1BA98E9D0085516E /* MOSQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOSQLiteManager.h; path = MobiORM/MOSQLiteManager.h; sourceTree = "<group>"; };
+		D0EAD3101BA98E9D0085516E /* MOSQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOSQLiteManager.m; path = MobiORM/MOSQLiteManager.m; sourceTree = "<group>"; };
+		D0EAD3111BA98E9D0085516E /* MOSQLiteOpenHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOSQLiteOpenHelper.h; path = MobiORM/MOSQLiteOpenHelper.h; sourceTree = "<group>"; };
+		D0EAD3121BA98E9D0085516E /* MOSQLiteOpenHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = MOSQLiteOpenHelper.m; path = MobiORM/MOSQLiteOpenHelper.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D0EAD3131BA98E9D0085516E /* MOSubselect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOSubselect.h; path = MobiORM/MOSubselect.h; sourceTree = "<group>"; };
+		D0EAD3141BA98E9D0085516E /* MOSubselect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOSubselect.m; path = MobiORM/MOSubselect.m; sourceTree = "<group>"; };
+		D0EAD3151BA98E9D0085516E /* MOTableExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOTableExpression.h; path = MobiORM/MOTableExpression.h; sourceTree = "<group>"; };
+		D0EAD3161BA98E9D0085516E /* MOTableExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOTableExpression.m; path = MobiORM/MOTableExpression.m; sourceTree = "<group>"; };
+		D0EAD3191BA98E9D0085516E /* MOValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOValue.h; path = MobiORM/MOValue.h; sourceTree = "<group>"; };
+		D0EAD31A1BA98E9D0085516E /* MOValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOValue.m; path = MobiORM/MOValue.m; sourceTree = "<group>"; };
+		D0EAD31D1BA98E9D0085516E /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Place.h; path = MobiORM/Place.h; sourceTree = "<group>"; };
+		D0EAD31E1BA98E9D0085516E /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Place.m; path = MobiORM/Place.m; sourceTree = "<group>"; };
+		D0EAD31F1BA98E9D0085516E /* PlaceDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceDAO.h; path = MobiORM/PlaceDAO.h; sourceTree = "<group>"; };
+		D0EAD3201BA98E9D0085516E /* PlaceDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceDAO.m; path = MobiORM/PlaceDAO.m; sourceTree = "<group>"; };
+		D0EAD3211BA98E9D0085516E /* PlaceRowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceRowHandler.h; path = MobiORM/PlaceRowHandler.h; sourceTree = "<group>"; };
+		D0EAD3221BA98E9D0085516E /* PlaceRowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceRowHandler.m; path = MobiORM/PlaceRowHandler.m; sourceTree = "<group>"; };
+		D0EAD3231BA98E9D0085516E /* PlaceTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceTag.h; path = MobiORM/PlaceTag.h; sourceTree = "<group>"; };
+		D0EAD3241BA98E9D0085516E /* PlaceTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceTag.m; path = MobiORM/PlaceTag.m; sourceTree = "<group>"; };
+		D0EAD3251BA98E9D0085516E /* PlaceTagDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceTagDAO.h; path = MobiORM/PlaceTagDAO.h; sourceTree = "<group>"; };
+		D0EAD3261BA98E9D0085516E /* PlaceTagDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceTagDAO.m; path = MobiORM/PlaceTagDAO.m; sourceTree = "<group>"; };
+		D0EAD3271BA98E9D0085516E /* PlaceTagRowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceTagRowHandler.h; path = MobiORM/PlaceTagRowHandler.h; sourceTree = "<group>"; };
+		D0EAD3281BA98E9D0085516E /* PlaceTagRowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceTagRowHandler.m; path = MobiORM/PlaceTagRowHandler.m; sourceTree = "<group>"; };
+		D0EAD3291BA98E9D0085516E /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tag.h; path = MobiORM/Tag.h; sourceTree = "<group>"; };
+		D0EAD32A1BA98E9D0085516E /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tag.m; path = MobiORM/Tag.m; sourceTree = "<group>"; };
+		D0EAD32B1BA98E9D0085516E /* TagDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TagDAO.h; path = MobiORM/TagDAO.h; sourceTree = "<group>"; };
+		D0EAD32C1BA98E9D0085516E /* TagDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TagDAO.m; path = MobiORM/TagDAO.m; sourceTree = "<group>"; };
+		D0EAD32D1BA98E9D0085516E /* TagRowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TagRowHandler.h; path = MobiORM/TagRowHandler.h; sourceTree = "<group>"; };
+		D0EAD32E1BA98E9D0085516E /* TagRowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TagRowHandler.m; path = MobiORM/TagRowHandler.m; sourceTree = "<group>"; };
+		D0EAD3641BA993D80085516E /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		D0EAD3661BA9A9D40085516E /* AddPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPlaceViewController.h; sourceTree = "<group>"; };
+		D0EAD3671BA9A9D40085516E /* AddPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPlaceViewController.m; sourceTree = "<group>"; };
+		D0EF2CC51BE0DC0A00A2FCB5 /* MobiORM_Demo_create.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MobiORM_Demo_create.sql; sourceTree = SOURCE_ROOT; };
+		D0F226141BC57E70008BEE7A /* EditTagsCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTagsCollectionView.h; sourceTree = "<group>"; };
+		D0F226151BC57E70008BEE7A /* EditTagsCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTagsCollectionView.m; sourceTree = "<group>"; };
+		D0F226171BC688B4008BEE7A /* TagsCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsCollectionView.h; sourceTree = "<group>"; };
+		D0F226181BC688B4008BEE7A /* TagsCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsCollectionView.m; sourceTree = "<group>"; };
+		D0F2261A1BC689EC008BEE7A /* TagsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsCollectionViewCell.h; sourceTree = "<group>"; };
+		D0F2261B1BC689EC008BEE7A /* TagsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsCollectionViewCell.m; sourceTree = "<group>"; };
+		D0F2261E1BC7A73B008BEE7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0EAD2961BA98E1A0085516E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EAD3651BA993D80085516E /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D03B31F41BF9FC190025FFCF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0EAD3661BA9A9D40085516E /* AddPlaceViewController.h */,
+				D0EAD3671BA9A9D40085516E /* AddPlaceViewController.m */,
+				D08D1E731BB56494004A6FC3 /* FilterPlacesViewController.h */,
+				D08D1E741BB56494004A6FC3 /* FilterPlacesViewController.m */,
+				D00B50271BB1A61800433424 /* PlaceDetailsViewController.h */,
+				D00B50281BB1A61800433424 /* PlaceDetailsViewController.m */,
+				D00B50121BAB102200433424 /* PlacesTableViewController.h */,
+				D00B50131BAB102200433424 /* PlacesTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D03B31F51BF9FC420025FFCF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D03B31F81BFA30600025FFCF /* TagManager.h */,
+				D03B31F91BFA30600025FFCF /* TagManager.m */,
+				D03B31FB1BFA308F0025FFCF /* PlaceManager.h */,
+				D03B31FC1BFA308F0025FFCF /* PlaceManager.m */,
+				D03B31F11BF9FBD10025FFCF /* AddressManager.h */,
+				D03B31F21BF9FBD10025FFCF /* AddressManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		D03B31F61BF9FD0E0025FFCF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D0E279771BC5283000D02836 /* EditTagsCollectionViewCell.h */,
+				D0E279781BC5283000D02836 /* EditTagsCollectionViewCell.m */,
+				D0E79FAD1BBD85460096E6E9 /* PlacesTableViewCell.h */,
+				D0E79FAE1BBD85460096E6E9 /* PlacesTableViewCell.m */,
+				D0F2261A1BC689EC008BEE7A /* TagsCollectionViewCell.h */,
+				D0F2261B1BC689EC008BEE7A /* TagsCollectionViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D03B31F71BF9FD250025FFCF /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				D0F226141BC57E70008BEE7A /* EditTagsCollectionView.h */,
+				D0F226151BC57E70008BEE7A /* EditTagsCollectionView.m */,
+				D0F226171BC688B4008BEE7A /* TagsCollectionView.h */,
+				D0F226181BC688B4008BEE7A /* TagsCollectionView.m */,
+			);
+			name = CollectionViews;
+			sourceTree = "<group>";
+		};
+		D0EAD2901BA98E1A0085516E = {
+			isa = PBXGroup;
+			children = (
+				D0EAD3641BA993D80085516E /* libsqlite3.0.dylib */,
+				D0EAD29B1BA98E1A0085516E /* MobiORMDemo */,
+				D0EAD29A1BA98E1A0085516E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0EAD29A1BA98E1A0085516E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0EAD2991BA98E1A0085516E /* MobiORMDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0EAD29B1BA98E1A0085516E /* MobiORMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D0EAD2A01BA98E1A0085516E /* AppDelegate.h */,
+				D0EAD2A11BA98E1A0085516E /* AppDelegate.m */,
+				D03B31F61BF9FD0E0025FFCF /* Cells */,
+				D03B31F71BF9FD250025FFCF /* CollectionViews */,
+				D0101A811BDA3D3700BE2216 /* DemoSQLiteOpenHelper.h */,
+				D0101A821BDA3D3700BE2216 /* DemoSQLiteOpenHelper.m */,
+				D03B32011BFCBC380025FFCF /* FilterState.h */,
+				D03B32021BFCBC380025FFCF /* FilterState.m */,
+				D0EAD2A91BA98E1A0085516E /* Images.xcassets */,
+				D0EAD2AB1BA98E1A0085516E /* LaunchScreen.xib */,
+				D0F2261D1BC7A73B008BEE7A /* Main.storyboard */,
+				D03B31F51BF9FC420025FFCF /* Managers */,
+				D0EAD3631BA98EA80085516E /* MobiORM */,
+				D0EAD29C1BA98E1A0085516E /* Supporting Files */,
+				D03B31F41BF9FC190025FFCF /* ViewControllers */,
+			);
+			path = MobiORMDemo;
+			sourceTree = "<group>";
+		};
+		D0EAD29C1BA98E1A0085516E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0EAD29E1BA98E1A0085516E /* main.m */,
+				D0EF2CC51BE0DC0A00A2FCB5 /* MobiORM_Demo_create.sql */,
+				D0EAD29D1BA98E1A0085516E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0EAD3631BA98EA80085516E /* MobiORM */ = {
+			isa = PBXGroup;
+			children = (
+				D03B31EE1BF9DD310025FFCF /* MODAOProvider.h */,
+				D03B31EF1BF9DD310025FFCF /* MODAOProvider.m */,
+				D0EAD2C21BA98E9D0085516E /* Address.h */,
+				D0EAD2C31BA98E9D0085516E /* Address.m */,
+				D0EAD2C41BA98E9D0085516E /* AddressDAO.h */,
+				D0EAD2C51BA98E9D0085516E /* AddressDAO.m */,
+				D0EAD2C61BA98E9D0085516E /* AddressRowHandler.h */,
+				D0EAD2C71BA98E9D0085516E /* AddressRowHandler.m */,
+				D0EAD2C81BA98E9D0085516E /* AddressView.h */,
+				D0EAD2C91BA98E9D0085516E /* AddressView.m */,
+				D0EAD2CA1BA98E9D0085516E /* AddressViewDAO.h */,
+				D0EAD2CB1BA98E9D0085516E /* AddressViewDAO.m */,
+				D0EAD2CC1BA98E9D0085516E /* AddressViewRowHandler.h */,
+				D0EAD2CD1BA98E9D0085516E /* AddressViewRowHandler.m */,
+				D0EAD2CE1BA98E9D0085516E /* City.h */,
+				D0EAD2CF1BA98E9D0085516E /* City.m */,
+				D0EAD2D01BA98E9D0085516E /* CityDAO.h */,
+				D0EAD2D11BA98E9D0085516E /* CityDAO.m */,
+				D0EAD2D21BA98E9D0085516E /* CityRowHandler.h */,
+				D0EAD2D31BA98E9D0085516E /* CityRowHandler.m */,
+				D0EAD2D41BA98E9D0085516E /* Country.h */,
+				D0EAD2D51BA98E9D0085516E /* Country.m */,
+				D0EAD2D61BA98E9D0085516E /* CountryDAO.h */,
+				D0EAD2D71BA98E9D0085516E /* CountryDAO.m */,
+				D0EAD2D81BA98E9D0085516E /* CountryRowHandler.h */,
+				D0EAD2D91BA98E9D0085516E /* CountryRowHandler.m */,
+				D0EAD2DA1BA98E9D0085516E /* MOAExp.h */,
+				D0EAD2DB1BA98E9D0085516E /* MOAExp.m */,
+				D0EAD2DC1BA98E9D0085516E /* MOAExpFunction.h */,
+				D0EAD2DD1BA98E9D0085516E /* MOAExpFunction.m */,
+				D0EAD2DE1BA98E9D0085516E /* MOAExpList.h */,
+				D0EAD2DF1BA98E9D0085516E /* MOAExpList.m */,
+				D0EAD2E01BA98E9D0085516E /* MOAExpNegation.h */,
+				D0EAD2E11BA98E9D0085516E /* MOAExpNegation.m */,
+				D0EAD2E21BA98E9D0085516E /* MOAExpOperator.h */,
+				D0EAD2E31BA98E9D0085516E /* MOAExpOperator.m */,
+				D0EAD2E41BA98E9D0085516E /* MOAExpParentheses.h */,
+				D0EAD2E51BA98E9D0085516E /* MOAExpParentheses.m */,
+				D0EAD2E61BA98E9D0085516E /* MOAExpValue.h */,
+				D0EAD2E71BA98E9D0085516E /* MOAExpValue.m */,
+				D0EAD2E81BA98E9D0085516E /* MOAsterisk.h */,
+				D0EAD2E91BA98E9D0085516E /* MOAsterisk.m */,
+				D0EAD2EA1BA98E9D0085516E /* MOColumn.h */,
+				D0EAD2EB1BA98E9D0085516E /* MOColumn.m */,
+				D0101A7E1BDA36A400BE2216 /* MODate.h */,
+				D0101A7F1BDA36A400BE2216 /* MODate.m */,
+				D0EAD2EC1BA98E9D0085516E /* MODbType.h */,
+				D00B501B1BAC05BC00433424 /* MODeleteStatement.h */,
+				D00B501C1BAC05BC00433424 /* MODeleteStatement.m */,
+				D0EAD2EF1BA98E9D0085516E /* MOExpression.h */,
+				D0EAD2F01BA98E9D0085516E /* MOExpressionConstants.h */,
+				D00B501D1BAC05BC00433424 /* MOInsertStatement.h */,
+				D00B501E1BAC05BC00433424 /* MOInsertStatement.m */,
+				D0EAD2F31BA98E9D0085516E /* MOLExp.h */,
+				D0EAD2F41BA98E9D0085516E /* MOLExp.m */,
+				D0EAD2F51BA98E9D0085516E /* MOLExpBoth.h */,
+				D0EAD2F61BA98E9D0085516E /* MOLExpBoth.m */,
+				D0EAD2F71BA98E9D0085516E /* MOLExpLeft.h */,
+				D0EAD2F81BA98E9D0085516E /* MOLExpLeft.m */,
+				D0EAD2F91BA98E9D0085516E /* MOLExpParentheses.h */,
+				D0EAD2FA1BA98E9D0085516E /* MOLExpParentheses.m */,
+				D0EAD2FB1BA98E9D0085516E /* MOLExpRight.h */,
+				D0EAD2FC1BA98E9D0085516E /* MOLExpRight.m */,
+				D0EAD2FD1BA98E9D0085516E /* MOOrderBy.h */,
+				D0EAD2FE1BA98E9D0085516E /* MOOrderBy.m */,
+				D0EAD2FF1BA98E9D0085516E /* MORowHandler.h */,
+				D0EAD3001BA98E9D0085516E /* MORowHandlerForData.h */,
+				D0EAD3011BA98E9D0085516E /* MORowHandlerForData.m */,
+				D0EAD3021BA98E9D0085516E /* MORowHandlerForDate.h */,
+				D0EAD3031BA98E9D0085516E /* MORowHandlerForDate.m */,
+				D0EAD3041BA98E9D0085516E /* MORowHandlerForNumber.h */,
+				D0EAD3051BA98E9D0085516E /* MORowHandlerForNumber.m */,
+				D0EAD3061BA98E9D0085516E /* MORowHandlerForObject.h */,
+				D0EAD3071BA98E9D0085516E /* MORowHandlerForObject.m */,
+				D0EAD3081BA98E9D0085516E /* MORowHandlerForString.h */,
+				D0EAD3091BA98E9D0085516E /* MORowHandlerForString.m */,
+				D0EAD30A1BA98E9D0085516E /* MORowHandlerRawData.h */,
+				D0EAD30B1BA98E9D0085516E /* MORowHandlerRawData.m */,
+				D0EAD30C1BA98E9D0085516E /* MOSelectQuery.h */,
+				D0EAD30D1BA98E9D0085516E /* MOSelectQuery.m */,
+				D0EAD30E1BA98E9D0085516E /* MOSQLiteDataSource.h */,
+				D0EAD30F1BA98E9D0085516E /* MOSQLiteManager.h */,
+				D0EAD3101BA98E9D0085516E /* MOSQLiteManager.m */,
+				D0EAD3111BA98E9D0085516E /* MOSQLiteOpenHelper.h */,
+				D0EAD3121BA98E9D0085516E /* MOSQLiteOpenHelper.m */,
+				D0EAD3131BA98E9D0085516E /* MOSubselect.h */,
+				D0EAD3141BA98E9D0085516E /* MOSubselect.m */,
+				D0EAD3151BA98E9D0085516E /* MOTableExpression.h */,
+				D0EAD3161BA98E9D0085516E /* MOTableExpression.m */,
+				D00B501F1BAC05BC00433424 /* MOUpdateStatement.h */,
+				D00B50201BAC05BC00433424 /* MOUpdateStatement.m */,
+				D0EAD3191BA98E9D0085516E /* MOValue.h */,
+				D0EAD31A1BA98E9D0085516E /* MOValue.m */,
+				D00B50211BAC05BC00433424 /* MOWhereStatement.h */,
+				D00B50221BAC05BC00433424 /* MOWhereStatement.m */,
+				D0EAD31D1BA98E9D0085516E /* Place.h */,
+				D0EAD31E1BA98E9D0085516E /* Place.m */,
+				D0EAD31F1BA98E9D0085516E /* PlaceDAO.h */,
+				D0EAD3201BA98E9D0085516E /* PlaceDAO.m */,
+				D0EAD3211BA98E9D0085516E /* PlaceRowHandler.h */,
+				D0EAD3221BA98E9D0085516E /* PlaceRowHandler.m */,
+				D0EAD3231BA98E9D0085516E /* PlaceTag.h */,
+				D0EAD3241BA98E9D0085516E /* PlaceTag.m */,
+				D0EAD3251BA98E9D0085516E /* PlaceTagDAO.h */,
+				D0EAD3261BA98E9D0085516E /* PlaceTagDAO.m */,
+				D0EAD3271BA98E9D0085516E /* PlaceTagRowHandler.h */,
+				D0EAD3281BA98E9D0085516E /* PlaceTagRowHandler.m */,
+				D0EAD3291BA98E9D0085516E /* Tag.h */,
+				D0EAD32A1BA98E9D0085516E /* Tag.m */,
+				D0EAD32B1BA98E9D0085516E /* TagDAO.h */,
+				D0EAD32C1BA98E9D0085516E /* TagDAO.m */,
+				D0EAD32D1BA98E9D0085516E /* TagRowHandler.h */,
+				D0EAD32E1BA98E9D0085516E /* TagRowHandler.m */,
+			);
+			name = MobiORM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0EAD2981BA98E1A0085516E /* MobiORMDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0EAD2BC1BA98E1A0085516E /* Build configuration list for PBXNativeTarget "MobiORMDemo" */;
+			buildPhases = (
+				D0EAD2951BA98E1A0085516E /* Sources */,
+				D0EAD2961BA98E1A0085516E /* Frameworks */,
+				D0EAD2971BA98E1A0085516E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobiORMDemo;
+			productName = MobiORMDemo;
+			productReference = D0EAD2991BA98E1A0085516E /* MobiORMDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0EAD2911BA98E1A0085516E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Krzysztof Waraksa";
+				TargetAttributes = {
+					D0EAD2981BA98E1A0085516E = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = D0EAD2941BA98E1A0085516E /* Build configuration list for PBXProject "MobiORMDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0EAD2901BA98E1A0085516E;
+			productRefGroup = D0EAD29A1BA98E1A0085516E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0EAD2981BA98E1A0085516E /* MobiORMDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0EAD2971BA98E1A0085516E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EAD2AD1BA98E1A0085516E /* LaunchScreen.xib in Resources */,
+				D0EF2CC61BE0DC0A00A2FCB5 /* MobiORM_Demo_create.sql in Resources */,
+				D0EAD2AA1BA98E1A0085516E /* Images.xcassets in Resources */,
+				D0F2261F1BC7A73B008BEE7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0EAD2951BA98E1A0085516E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EAD3511BA98E9D0085516E /* MORowHandlerRawData.m in Sources */,
+				D0EAD3351BA98E9D0085516E /* City.m in Sources */,
+				D0EAD35C1BA98E9D0085516E /* PlaceRowHandler.m in Sources */,
+				D00B50251BAC05BC00433424 /* MOUpdateStatement.m in Sources */,
+				D0EAD35E1BA98E9D0085516E /* PlaceTagDAO.m in Sources */,
+				D03B32031BFCBC380025FFCF /* FilterState.m in Sources */,
+				D0EAD3471BA98E9D0085516E /* MOLExpBoth.m in Sources */,
+				D0EAD33E1BA98E9D0085516E /* MOAExpNegation.m in Sources */,
+				D0EAD3551BA98E9D0085516E /* MOSubselect.m in Sources */,
+				D0E79FAF1BBD85460096E6E9 /* PlacesTableViewCell.m in Sources */,
+				D0EAD3491BA98E9D0085516E /* MOLExpParentheses.m in Sources */,
+				D0EAD34A1BA98E9D0085516E /* MOLExpRight.m in Sources */,
+				D00B50241BAC05BC00433424 /* MOInsertStatement.m in Sources */,
+				D0EAD34E1BA98E9D0085516E /* MORowHandlerForNumber.m in Sources */,
+				D0EAD3331BA98E9D0085516E /* AddressViewDAO.m in Sources */,
+				D0EAD3541BA98E9D0085516E /* MOSQLiteOpenHelper.m in Sources */,
+				D0EAD3341BA98E9D0085516E /* AddressViewRowHandler.m in Sources */,
+				D0EAD3381BA98E9D0085516E /* Country.m in Sources */,
+				D0EAD3601BA98E9D0085516E /* Tag.m in Sources */,
+				D0EAD3621BA98E9D0085516E /* TagRowHandler.m in Sources */,
+				D0EAD3361BA98E9D0085516E /* CityDAO.m in Sources */,
+				D03B31F31BF9FBD10025FFCF /* AddressManager.m in Sources */,
+				D03B31FD1BFA308F0025FFCF /* PlaceManager.m in Sources */,
+				D0EAD2A21BA98E1A0085516E /* AppDelegate.m in Sources */,
+				D0EAD3581BA98E9D0085516E /* MOValue.m in Sources */,
+				D0F2261C1BC689EC008BEE7A /* TagsCollectionViewCell.m in Sources */,
+				D00B50141BAB102200433424 /* PlacesTableViewController.m in Sources */,
+				D0EAD3501BA98E9D0085516E /* MORowHandlerForString.m in Sources */,
+				D0EAD3681BA9A9D40085516E /* AddPlaceViewController.m in Sources */,
+				D0101A831BDA3D3700BE2216 /* DemoSQLiteOpenHelper.m in Sources */,
+				D0EAD3421BA98E9D0085516E /* MOAsterisk.m in Sources */,
+				D0EAD3401BA98E9D0085516E /* MOAExpParentheses.m in Sources */,
+				D0EAD33C1BA98E9D0085516E /* MOAExpFunction.m in Sources */,
+				D0EAD33F1BA98E9D0085516E /* MOAExpOperator.m in Sources */,
+				D0EAD34F1BA98E9D0085516E /* MORowHandlerForObject.m in Sources */,
+				D0EAD3411BA98E9D0085516E /* MOAExpValue.m in Sources */,
+				D08D1E751BB56494004A6FC3 /* FilterPlacesViewController.m in Sources */,
+				D0EAD3561BA98E9D0085516E /* MOTableExpression.m in Sources */,
+				D03B31F01BF9DD310025FFCF /* MODAOProvider.m in Sources */,
+				D0EAD34C1BA98E9D0085516E /* MORowHandlerForData.m in Sources */,
+				D03B31FA1BFA30600025FFCF /* TagManager.m in Sources */,
+				D0EAD35A1BA98E9D0085516E /* Place.m in Sources */,
+				D0EAD3311BA98E9D0085516E /* AddressRowHandler.m in Sources */,
+				D0EAD3611BA98E9D0085516E /* TagDAO.m in Sources */,
+				D0EAD35B1BA98E9D0085516E /* PlaceDAO.m in Sources */,
+				D0EAD3481BA98E9D0085516E /* MOLExpLeft.m in Sources */,
+				D0EAD33A1BA98E9D0085516E /* CountryRowHandler.m in Sources */,
+				D0EAD35D1BA98E9D0085516E /* PlaceTag.m in Sources */,
+				D0EAD32F1BA98E9D0085516E /* Address.m in Sources */,
+				D00B50291BB1A61800433424 /* PlaceDetailsViewController.m in Sources */,
+				D0EAD3321BA98E9D0085516E /* AddressView.m in Sources */,
+				D0EAD29F1BA98E1A0085516E /* main.m in Sources */,
+				D0EAD3531BA98E9D0085516E /* MOSQLiteManager.m in Sources */,
+				D0EAD34D1BA98E9D0085516E /* MORowHandlerForDate.m in Sources */,
+				D0EAD3521BA98E9D0085516E /* MOSelectQuery.m in Sources */,
+				D0EAD35F1BA98E9D0085516E /* PlaceTagRowHandler.m in Sources */,
+				D0E279791BC5283000D02836 /* EditTagsCollectionViewCell.m in Sources */,
+				D0EAD3391BA98E9D0085516E /* CountryDAO.m in Sources */,
+				D0EAD34B1BA98E9D0085516E /* MOOrderBy.m in Sources */,
+				D0EAD33B1BA98E9D0085516E /* MOAExp.m in Sources */,
+				D0F226161BC57E70008BEE7A /* EditTagsCollectionView.m in Sources */,
+				D00B50231BAC05BC00433424 /* MODeleteStatement.m in Sources */,
+				D0EAD3461BA98E9D0085516E /* MOLExp.m in Sources */,
+				D0EAD3371BA98E9D0085516E /* CityRowHandler.m in Sources */,
+				D0EAD3301BA98E9D0085516E /* AddressDAO.m in Sources */,
+				D0EAD33D1BA98E9D0085516E /* MOAExpList.m in Sources */,
+				D0EAD3431BA98E9D0085516E /* MOColumn.m in Sources */,
+				D0101A801BDA36A400BE2216 /* MODate.m in Sources */,
+				D00B50261BAC05BC00433424 /* MOWhereStatement.m in Sources */,
+				D0F226191BC688B4008BEE7A /* TagsCollectionView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0EAD2AB1BA98E1A0085516E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0EAD2AC1BA98E1A0085516E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D0F2261D1BC7A73B008BEE7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0F2261E1BC7A73B008BEE7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0EAD2BA1BA98E1A0085516E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0EAD2BB1BA98E1A0085516E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0EAD2BD1BA98E1A0085516E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MobiORMDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0EAD2BE1BA98E1A0085516E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MobiORMDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0EAD2941BA98E1A0085516E /* Build configuration list for PBXProject "MobiORMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EAD2BA1BA98E1A0085516E /* Debug */,
+				D0EAD2BB1BA98E1A0085516E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0EAD2BC1BA98E1A0085516E /* Build configuration list for PBXNativeTarget "MobiORMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EAD2BD1BA98E1A0085516E /* Debug */,
+				D0EAD2BE1BA98E1A0085516E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0EAD2911BA98E1A0085516E /* Project object */;
+}
