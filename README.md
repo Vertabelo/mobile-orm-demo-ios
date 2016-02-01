@@ -9,7 +9,7 @@ The app does the following:
 - Shows details of the selected item with possibility to edit/delete it.
 
 For connection to database stands listed below components:
-- **MobiORM package** – generated Java classes that maps the database model and classes with defined operations for creating, reading, updating and deleting objects in/from a database. 
+- **MobiORM package** – generated Objective-C classes that maps the database model and classes with defined operations for creating, reading, updating and deleting objects in/from a database. 
 - `PlaceManager` -  class that is responsible for managing places (insert, delete, update, select)
 - `TagsManager` – class that handles inserting, deleting tags.
 - `AddressManager` – class that manages countries and cities associated with the places.
